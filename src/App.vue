@@ -1,5 +1,6 @@
 <script>
 import { RouterLink, RouterView } from "vue-router";
+import "@/assests/base.css";
 
 export default {
   data() {
@@ -88,17 +89,17 @@ export default {
 
 <style scoped>
 * {
-  font-family: "Poppins", sans-serif;
   max-width: 80%;
 }
 
-#lista-posts, form {
+#lista-posts,
+form {
   margin: 0 auto;
   max-width: 50%;
 }
 
 #lista-posts {
-  padding-left: 5rem ;
+  padding-left: 15rem;
 }
 
 form {
@@ -114,9 +115,16 @@ form > * {
   width: 100%;
 
   border: 1.9px solid #b18597;
+  
 }
 
-::placeholder{
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px solid #b18597;
+}
+
+
+::placeholder {
   color: #382b22;
 }
 
@@ -131,13 +139,12 @@ button > ::before,
 }
 
 button {
-  font-family: "Rubik", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   max-width: 20vh;
   max-height: 20vh;
   background: #fff;
