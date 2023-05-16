@@ -89,20 +89,40 @@ export default {
 <style scoped>
 * {
   font-family: "Poppins", sans-serif;
+  max-width: 80%;
+}
+
+#lista-posts, form {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+#lista-posts {
+  padding-left: 5rem ;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 form > * {
   margin: 1rem;
   display: flex;
+  width: 100%;
+
+  border: 1.9px solid #b18597;
+}
+
+::placeholder{
+  color: #382b22;
 }
 
 button > * {
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 button > ::before,
@@ -117,7 +137,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  
   max-width: 20vh;
   max-height: 20vh;
   background: #fff;
@@ -134,7 +154,7 @@ button {
 }
 
 .learn-more {
-  font-weight: 600;
+  font-weight: 700;
   color: #382b22;
   text-transform: uppercase;
   padding: 1.25em 2em;
