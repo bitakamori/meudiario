@@ -1,0 +1,10 @@
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  form > * {
+    margin: 1rem;
+    display: flex;
+  }

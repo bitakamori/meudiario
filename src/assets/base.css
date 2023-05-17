@@ -1,0 +1,7 @@
+@import 'form.css';
+@import 'button.css';
+/* @import 'input.css'; */
+
+* {
+    font-family: "Poppins", sans-serif;
+  }
