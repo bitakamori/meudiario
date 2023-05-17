@@ -4,6 +4,8 @@
 
 * {
     font-family: "Poppins", sans-serif;
+    max-width: 80%;
+    cursor: url(/public/svt.png), default;
   }
   
   :root {
@@ -32,4 +34,12 @@
     background: var(--sb-thumb-color);
     border-radius: 10px;
   }
+  
+  footer {
+    margin-top: 7rem;
+    min-width: 96%;
+    display: flex;
+    justify-content: end;
+  }
+
   

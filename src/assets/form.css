@@ -1,10 +1,30 @@
 form {
-    display: flex;
-    flex-direction: column;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  form > * {
-    margin: 1rem;
-    display: flex;
-  }
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form > * {
+  margin: 1rem;
+  display: flex;
+  width: 100%;
+
+  border: 1.9px solid #b18597;
+  cursor: url(/public/svt.png), default;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #b18597;
+}
+
+::placeholder {
+  color: #382b22;
+}

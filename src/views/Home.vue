@@ -41,3 +41,33 @@ export default {
     </div>
   </div>
 </template>
+
+<style>
+#lista-posts {
+  margin: 0 auto;
+  max-width: 50%;
+    /* padding-left: 15rem; */
+    background: #f9c4d2;
+  position: relative;
+  /* text-align: center; */
+}
+
+#lista-posts:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 29px;
+  right: 0;
+  bottom: -25px;
+  left: 0;
+  background: linear-gradient(#f9c4d2 50%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #f9c4d2 53%, rgba(255, 255, 255, 0) 0) 0 0,
+    radial-gradient(circle closest-side, #f9c4d2 50%, rgba(255, 255, 255, 0) 0)
+      25px 0 white;
+      background-size: 110px 200px;
+background-repeat: repeat-x;
+  background-position: center;
+}
+
+</style>
