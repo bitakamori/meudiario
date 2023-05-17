@@ -84,6 +84,10 @@ export default {
     <button class="learn-more" type="button" @click="handleClick">Criar</button>
   </form>
 
+  <footer>
+    <img id="gif" src="cat.gif" />
+  </footer>
+
   <RouterView />
 </template>
 
@@ -99,10 +103,33 @@ form {
 }
 
 #lista-posts {
-  padding-left: 15rem;
+  /* padding-left: 15rem; */
+
+  background: #f9c4d2;
+  position: relative;
+  /* text-align: center; */
+}
+
+#lista-posts:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 29px;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  background: linear-gradient(#f9c4d2 50%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #f9c4d2 53%, rgba(255, 255, 255, 0) 0) 0 0,
+    radial-gradient(circle closest-side, #f9c4d2 50%, rgba(255, 255, 255, 0) 0)
+      55px 0 white;
+      background-size: 110px 200px;
+background-repeat: repeat-x;
+  background-position: center;
 }
 
 form {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,14 +142,14 @@ form > * {
   width: 100%;
 
   border: 1.9px solid #b18597;
-  
+  cursor: url(/public/svt.png), default;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
   border: 2px solid #b18597;
 }
-
 
 ::placeholder {
   color: #382b22;
@@ -171,6 +198,7 @@ button {
   transform-style: preserve-3d;
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
     background 150ms cubic-bezier(0, 0, 0.58, 1);
+  cursor: url(/public/svt.png), default;
 }
 
 button::before {
@@ -208,5 +236,16 @@ button:active {
 button:active::before {
   box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
   transform: translate3d(0, 0, -1em);
+}
+
+footer {
+  margin-top: 7rem;
+  min-width: 96%;
+  display: flex;
+  justify-content: end;
+}
+
+footer #gif {
+  width: 250px;
 }
 </style>
