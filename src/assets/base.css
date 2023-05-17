@@ -1,0 +1,35 @@
+@import 'form.css';
+@import 'button.css';
+/* @import 'input.css'; */
+
+* {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  :root {
+    font-family: "Poppins", sans-serif;
+    cursor: url(/public/svt.png), default;
+  }
+  
+  body {
+    --sb-track-color: white; 
+    --sb-thumb-color: #b18597;
+    --sb-size: 10px;
+  
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+  }
+  
