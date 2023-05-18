@@ -18,10 +18,16 @@ export default {
 </script>
 
 <template>
-  <RouterLink to="/"> Home </RouterLink>
-  <RouterLink to="/create"> Novo Post</RouterLink>
+  <header>
+    <nav>
+      <RouterLink to="/"> Home </RouterLink>
+      <RouterLink to="/create"> Novo Post</RouterLink>
+    </nav>
+  </header>
 
-  <RouterView :posts="posts" @create-post="addPost" />
+  <main>
+    <RouterView :posts="posts" @create-post="addPost" />
+  </main>
 </template>
 
 <style scoped></style>
