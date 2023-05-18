@@ -3,11 +3,13 @@ form {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
 
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  max-width: 60%;
+  margin: 13rem auto;
 }
 
 form > * {
@@ -25,6 +27,4 @@ textarea:focus {
   border: 2px solid #b18597;
 }
 
-::placeholder {
-  color: #382b22;
-}
+
