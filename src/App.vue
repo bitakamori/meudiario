@@ -5,7 +5,11 @@ import "@/assets/base.css";
 export default {
   data() {
     return {
-      posts: [],
+      posts: [
+        // title= "titulo",
+        // content= "texto textotexto textotexto textotexto textotexto textotexto textotexto textotexto texto"
+
+      ],
     };
   },
   methods: {
@@ -28,6 +32,29 @@ export default {
   <main>
     <RouterView :posts="posts" @create-post="addPost" />
   </main>
+  <footer>
+    <img id="gif" src="cat.gif" />
+  </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+header{
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  /* background: blue; */
+  margin-top: 1rem;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a.router-link-exact-active {
+  color: var(--color-text);
+}
+
+
+</style>

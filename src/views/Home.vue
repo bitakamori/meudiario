@@ -28,6 +28,7 @@ export default {
 
 <template>
   <input
+    id="search"
     v-model="search"
     @input=""
     placeholder="Procure pelo título do post..."
@@ -35,9 +36,11 @@ export default {
 
   <div id="lista-posts">
     <div class="post" v-for="post in filteredPosts" :key="post.title">
+      <h5>{{ post.datetime }}</h5>
       <h3>{{ post.title }}</h3>
-      <h4>{{ post.datetime }}</h4>
       <p>{{ post.content }}</p>
     </div>
   </div>
 </template>
+
+<style></style>
