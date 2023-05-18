@@ -60,4 +60,6 @@ footer {
 
   bottom: 0;
   position: fixed;
+  /* background: red; */
+  /* cursor: url(/public/svt.png), default; */
 }

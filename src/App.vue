@@ -6,9 +6,18 @@ export default {
   data() {
     return {
       posts: [
-        // title= "titulo",
-        // content= "texto textotexto textotexto textotexto textotexto textotexto textotexto textotexto texto"
-
+        {
+          datetime: "18/5/2023",
+          title: "titulo",
+          content:
+            "texto textotexto textotexto textotexto textotexto textotexto textotexto textotexto texto",
+        },
+        {
+          datetime: "18/5/2023",
+          title: "titulo2",
+          content:
+            "texto textotexto textotexto textotexto textotexto textotexto textotexto textotexto texto",
+        },
       ],
     };
   },
@@ -17,6 +26,9 @@ export default {
       //adicionar o novo post à lista de posts
       this.posts.push(newPost);
     },
+     updatePost (updatePost, id) {
+     this.posts[id] = updatePost;
+     }
   },
 };
 </script>
@@ -30,17 +42,16 @@ export default {
   </header>
 
   <main>
-    <RouterView :posts="posts" @create-post="addPost" />
+    <RouterView :posts="posts" @create-post="addPost" @edit-post="updatePost"/>
   </main>
 
   <footer>
     <img id="gif" src="cat.gif" />
   </footer>
-  
 </template>
 
 <style scoped>
-header{
+header {
   /* background: red; */
   display: flex;
   justify-content: center;
@@ -57,6 +68,4 @@ nav {
 nav a.router-link-exact-active {
   color: var(--color-text);
 }
-
-
 </style>

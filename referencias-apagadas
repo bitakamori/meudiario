@@ -1,0 +1,17 @@
+
+//ess função estava no postform em methods
+// handleInputChange(event) {
+//       const { name, value } = event.target;
+//       // essa função de cima é igual fazer essa de baixo só q mais sucinto.
+//       // event.target.name
+//       // event.target.value
+
+//       this.FormData[name] = value;
+//     },
+
+//essa funcao estava no postform em template
+//essa @keyup = handleInputChange é pra trata os inputs que coloca nos campos pra nao cuidar td de uma vez quando da submit. -->
+// name="content"
+//       :value="FormData.content"
+//       @keyup="handleInputChange"
+//       id=""
