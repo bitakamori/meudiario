@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-<header>
+  <header>
     <nav>
       <RouterLink to="/"> Home </RouterLink>
       <RouterLink to="/create"> Novo Post</RouterLink>
