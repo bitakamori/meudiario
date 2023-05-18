@@ -22,15 +22,16 @@ export default {
 </script>
 
 <template>
-  <header>
+<header>
     <nav>
       <RouterLink to="/"> Home </RouterLink>
       <RouterLink to="/create"> Novo Post</RouterLink>
     </nav>
   </header>
 
-  <RouterView :posts="posts" @create-post="addPost" />
-
+  <main>
+    <RouterView :posts="posts" @create-post="addPost" />
+  </main>
   <footer>
     <img id="gif" src="cat.gif" />
   </footer>
