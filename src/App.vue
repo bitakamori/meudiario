@@ -28,6 +28,11 @@ export default {
   <main>
     <RouterView :posts="posts" @create-post="addPost" />
   </main>
+
+  <footer>
+    <img id="gif" src="cat.gif" />
+  </footer>
+  
 </template>
 
 <style scoped></style>
