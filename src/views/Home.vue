@@ -51,11 +51,10 @@ export default {
       <h5>{{ post.datetime }}</h5>
       <h3>
         {{ post.title }}
-        <RouterLink :to="`/edit/${getPostId(post.title)}`">
-          <span class="material-symbols-rounded"> edit </span>
-        </RouterLink>
       </h3>
-      <p>{{ post.content }}</p>
+      <p>{{ post.content }}<RouterLink :to="`/edit/${getPostId(post.title)}`">
+          <span class="material-symbols-rounded"> edit </span>
+        </RouterLink></p>
     </div>
   </div>
 </template>
