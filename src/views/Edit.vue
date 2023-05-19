@@ -5,10 +5,15 @@ export default {
     posts: Array,
   },
   data() {
+    //acessa o parâmetro id uma única vez
+    const id = this.$route.params.id;
     return {
+      //expondo a variável id para ser acessível
+      id: id,
+      post: this.posts[id],
       //recebe o post como um props
       // retorna o post a partir do parametro da rota, a partir do botaozinho de cada post que tem um id especifico, e o id é um parametro
-      post: this.posts[this.$route.params.id],
+      //post: this.posts[id],  -----> foi substituio pelo de cima
     };
   },
   components: {
@@ -18,5 +23,5 @@ export default {
 </script>
 
 <template>
-  <PostForm :post="post"/>
+  <PostForm :post="post" :id="id" />
 </template>

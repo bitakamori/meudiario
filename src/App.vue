@@ -22,13 +22,14 @@ export default {
     };
   },
   methods: {
-    addPost(newPost) {
+    addPost(PostData) {
       //adicionar o novo post à lista de posts
-      this.posts.push(newPost);
+      this.posts.push(PostData);
     },
-     updatePost (updatePost, id) {
-     this.posts[id] = updatePost;
-     }
+    updatePost(updatePost, id) {
+      // console.log(updatePost, id);
+      this.posts[id] = updatePost;
+    },
   },
 };
 </script>
@@ -42,7 +43,7 @@ export default {
   </header>
 
   <main>
-    <RouterView :posts="posts" @create-post="addPost" @edit-post="updatePost"/>
+    <RouterView :posts="posts" @create-post="addPost" @edit-post="updatePost" />
   </main>
 
   <footer>

@@ -1,14 +1,16 @@
 <script>
 export default {
-    props: {
-        post: Object,
-    },
+  props: {
+    post: Object,
+    id: String,
+  },
   data() {
     return {
       FormData: {
-        title: this.post?.title || "" ,
+        title: this.post?.title || "",
         content: this.post?.content || "",
       },
+      isEditing: Boolean(this.post),
     };
   },
   methods: {
@@ -21,7 +23,7 @@ export default {
       const now = new Date();
       const dataDaPostagem = `${now.getDate()}/${
         now.getMonth() + 1
-      }/${now.getFullYear()}`;
+      }/${now.getFullYear()} - ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
 
       // metodo 1
       // this.post[this.posts.length] = {
@@ -38,18 +40,22 @@ export default {
       //   datetime: dataDaPostagem,
       // });
 
-      const newPost = {
+      const PostData = {
         title: this.FormData.title,
         content: this.FormData.content,
         datetime: dataDaPostagem,
       };
-      //emite o evento creat-post
-      this.$emit("create-post", newPost);
-
-      this.FormData = {
-        title: "",
-        content: "",
-      };
+      if (this.isEditing) {
+        this.$emit("edit-post", PostData, this.id);
+      } else {
+        //emite o evento creat-post
+        this.$emit("create-post", PostData);
+      }
+      //foi substituido pelo de cima talvez
+      //   this.FormData = {
+      //     title: "",
+      //     content: "",
+      //   };
       this.$router.push("/");
     },
   },
