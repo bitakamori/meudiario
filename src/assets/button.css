@@ -29,7 +29,7 @@ button > * {
     font-family: inherit;
   }
   
-  .learn-more {
+  .learn-more, .btn-cancelar, .btn-confirmar{
     font-weight: 700;
     color: #382b22;
     text-transform: uppercase;
@@ -79,3 +79,26 @@ button > * {
     box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
     transform: translate3d(0, 0, -1em);
   }
+
+
+ /* .btn-cancelar {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    max-width: 20vh;
+    max-height: 10vh;
+    background: #fff;
+  
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+  } */

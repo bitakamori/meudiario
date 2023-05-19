@@ -7,6 +7,7 @@ export default {
   data() {
     return {
       search: "",
+      showModal: false,
     };
   },
   computed: {
@@ -25,16 +26,19 @@ export default {
     },
   },
   methods: {
-      getPostId(title) {
-        //passa pela lista de posts (não filtrada)
-        for (const index in this.posts) {
-          //acessa o post na posição index da lista de posts
-          const post = this.posts[index];
-          //verifica se o título do post atual é igual ao título buscado
-          if (post.title === title) return index;
-        }
-      },
+    getPostId(title) {
+      //passa pela lista de posts (não filtrada)
+      for (const index in this.posts) {
+        //acessa o post na posição index da lista de posts
+        const post = this.posts[index];
+        //verifica se o título do post atual é igual ao título buscado
+        if (post.title === title) return index;
+      }
     },
+    toggle() {
+      this.showModal = !this.showModal
+    },
+  },
 };
 </script>
 
@@ -52,9 +56,24 @@ export default {
       <h3>
         {{ post.title }}
       </h3>
-      <p>{{ post.content }}<RouterLink :to="`/edit/${getPostId(post.title)}`">
+      <p>
+        {{ post.content
+        }}<RouterLink :to="`/edit/${getPostId(post.title)}`">
           <span class="material-symbols-rounded"> edit </span>
-        </RouterLink></p>
+        </RouterLink>
+      </p>
+      <span class="material-symbols-outlined" @click="toggle"> delete </span>
+    </div>
+  </div>
+  <div class="modal" v-show="showModal">
+    <div class="modal-content">
+      <h3>Deletar Post</h3>
+      <p>Tem certeza que quer deletar o post "TITULO DO POST"?</p>
+
+      <div class="modal-actions">
+        <button class="btn-cancelar" @click="toggle">cancelar</button>
+        <button class="btn-confirmar">confirmar</button>
+      </div>
     </div>
   </div>
 </template>
