@@ -22,9 +22,13 @@ export default {
     };
   },
   methods: {
-    addPost(newPost) {
+    addPost(PostData) {
       //adicionar o novo post à lista de posts
-      this.posts.push(newPost);
+      this.posts.push(PostData);
+    },
+    updatePost(updatePost, id) {
+      // console.log(updatePost, id);
+      this.posts[id] = updatePost;
     },
   },
 };
@@ -39,17 +43,16 @@ export default {
   </header>
 
   <main>
-    <RouterView :posts="posts" @create-post="addPost" />
+    <RouterView :posts="posts" @create-post="addPost" @edit-post="updatePost" />
   </main>
 
   <footer>
     <img id="gif" src="cat.gif" />
   </footer>
-  
 </template>
 
 <style scoped>
-header{
+header {
   /* background: red; */
   display: flex;
   justify-content: center;
@@ -66,6 +69,4 @@ nav {
 nav a.router-link-exact-active {
   color: var(--color-text);
 }
-
-
 </style>
