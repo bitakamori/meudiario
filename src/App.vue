@@ -6,9 +6,18 @@ export default {
   data() {
     return {
       posts: [
-        // title= "titulo",
-        // content= "texto textotexto textotexto textotexto textotexto textotexto textotexto textotexto texto"
-
+        {
+          datetime: "18/5/2023",
+          title: "titulo",
+          content:
+            "texto textotexto textotexto textotexto textotexto textotexto textotexto textotexto texto",
+        },
+        {
+          datetime: "18/5/2023",
+          title: "titulo2",
+          content:
+            "texto textotexto textotexto textotexto textotexto textotexto textotexto textotexto texto",
+        },
       ],
     };
   },
