@@ -1,25 +1,40 @@
 #lista-posts {
   margin: 4rem auto;
-  padding: 1rem;
+  /* padding: 1rem; */
   max-width: 50%;
 
-  background: #f9c4d2;
+  /* background: #f9c4d2; */
   position: relative;
 
   display: flex;
   flex-direction: column;
- 
 }
 
 #lista-posts h5 {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #cc98ae;
+
+    letter-spacing: 1px;
+    line-height: 10px;
+
+    margin: 2px;
 }
 
 /* continuar no h5, colocar uma fonte de maquina de escrever */
 
 #lista-posts h3 {
-  background: white;
+  /* background: white; */
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 2px;
+}
+
+#lista-posts p {
+  margin-bottom: 5rem;
 }
 
 /* #lista-posts:after {
