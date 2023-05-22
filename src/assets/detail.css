@@ -1,0 +1,11 @@
+#detail {
+    margin: 4rem auto;
+    /* padding: 1rem; */
+    max-width: 50%;
+  
+    /* background: #f9c4d2; */
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+  }
