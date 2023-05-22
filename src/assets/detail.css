@@ -1,11 +1,37 @@
 #detail {
     margin: 4rem auto;
-    /* padding: 1rem; */
     max-width: 50%;
+  }
   
-    /* background: #f9c4d2; */
-    position: relative;
+  .flex {
+    /* background: red; */
+    
+    
+  }
   
-    display: flex;
-    flex-direction: column;
+  
+  #detail h5 {
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      color: #cc98ae;
+  
+      letter-spacing: 1px;
+      line-height: 10px;
+  
+      margin: 2px;     
+  }
+  
+  #detail h3 {
+    /* background: white; */
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 2px;
+  }
+  
+  #detail p {
+   /* margin-top: 1rem; */
+   margin-bottom: 5rem;
   }
