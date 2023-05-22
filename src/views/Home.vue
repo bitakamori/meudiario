@@ -8,6 +8,7 @@ export default {
     return {
       search: "",
       showModal: false,
+      selectedPost: null,
     };
   },
   computed: {
@@ -35,8 +36,21 @@ export default {
         if (post.title === title) return index;
       }
     },
-    toggle() {
-      this.showModal = !this.showModal
+    setupModal(id) {
+      // mostrar e esconder o modal
+      this.showModal = !this.showModal;
+      //selecionar o post e desselecionar o post
+      if (id) {
+        this.selectedPost = this.posts[id]; //salva o post inteiro (com titulo, conteudo e data)
+        return;
+      }
+      this.selectedPost = null;
+    },
+    deletePost() {
+      const id = this.getPostId(this.selectedPost.title);
+      this.$emit("delete-post", id);
+      //feche o modal e desselecione o p post
+      this;this.setupModal();
     },
   },
 };
@@ -62,17 +76,22 @@ export default {
           <span class="material-symbols-rounded"> edit </span>
         </RouterLink>
       </p>
-      <span class="material-symbols-outlined" @click="toggle"> delete </span>
+      <span
+        class="material-symbols-outlined"
+        @click="setupModal(getPostId(post.title))"
+      >
+        delete
+      </span>
     </div>
   </div>
   <div class="modal" v-show="showModal">
     <div class="modal-content">
       <h3>Deletar Post</h3>
-      <p>Tem certeza que quer deletar o post "TITULO DO POST"?</p>
+      <p>Tem certeza que quer deletar o post '{{ selectedPost?.title }}'?</p>
 
       <div class="modal-actions">
-        <button class="btn-cancelar" @click="toggle">cancelar</button>
-        <button class="btn-confirmar">confirmar</button>
+        <button class="btn-cancelar" @click="setupModal">cancelar</button>
+        <button class="btn-confirmar" @click="deletePost">confirmar</button>
       </div>
     </div>
   </div>
