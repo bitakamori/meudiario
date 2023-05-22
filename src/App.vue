@@ -8,9 +8,9 @@ export default {
       posts: [
         {
           datetime: "18/5/2023",
-          title: "titulo",
+          title: "titulo muito grande demais very very",
           content:
-            "texto textotexto textotexto textotexto textotextotextotexto textotextotextotexto textotextotextotexto textotextotextotexto textotextotextotexto textotexto textotexto textotexto textotexto texto",
+            "texto textotexto textotexto textotexto textotextotextotexto textotextotextotexto textotextotextotexto textotextotextotexto textotextotextotexto textotexto textotexto textotexto textotexto texto textotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto textotextotextotextotexto textotexto textotexto textotexto textotexto texto",
         },
         {
           datetime: "18/5/2023",
@@ -59,9 +59,6 @@ export default {
     <RouterView :posts="posts" @create-post="addPost" @edit-post="updatePost" @delete-post="removePost"/>
   </main>
 
-  <footer>
-    <img id="gif" src="cat.gif" />
-  </footer>
 </template>
 
 <style scoped>
