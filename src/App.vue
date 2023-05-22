@@ -31,6 +31,7 @@ export default {
       this.posts[id] = updatePost;
     },
     removePost(id) {
+      //pode usar o slice sem ter q fazer td isso, mas isso mostra o q acontece por debaixo dos panos do slice
       //como remover um post do array this.posts
       const minhaNovaLista =[];
       for (const index in this.posts) {
