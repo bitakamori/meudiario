@@ -10,7 +10,7 @@ export default {
           datetime: "18/5/2023",
           title: "titulo",
           content:
-            "texto textotexto textotexto textotexto textotexto textotexto textotexto textotexto texto",
+            "texto textotexto textotexto textotexto textotextotextotexto textotextotextotexto textotextotextotexto textotextotextotexto textotextotextotexto textotexto textotexto textotexto textotexto texto",
         },
         {
           datetime: "18/5/2023",
