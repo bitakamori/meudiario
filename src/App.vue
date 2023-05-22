@@ -30,6 +30,19 @@ export default {
       // console.log(updatePost, id);
       this.posts[id] = updatePost;
     },
+    removePost(id) {
+      //pode usar o slice sem ter q fazer td isso, mas isso mostra o q acontece por debaixo dos panos do slice
+      //como remover um post do array this.posts
+      const minhaNovaLista =[];
+      for (const index in this.posts) {
+        if (index == id) {
+          continue;
+        }
+        const post = this.posts[index];
+        minhaNovaLista.push(post);
+      }
+      this.posts = minhaNovaLista;
+    }
   },
 };
 </script>
@@ -43,7 +56,7 @@ export default {
   </header>
 
   <main>
-    <RouterView :posts="posts" @create-post="addPost" @edit-post="updatePost" />
+    <RouterView :posts="posts" @create-post="addPost" @edit-post="updatePost" @delete-post="removePost"/>
   </main>
 
   <footer>
