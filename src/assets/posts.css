@@ -10,6 +10,15 @@
   flex-direction: column;
 }
 
+.flex {
+  background: red;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+
+
 #lista-posts h5 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
