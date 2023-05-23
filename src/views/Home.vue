@@ -50,7 +50,7 @@ export default {
       const id = this.getPostId(this.selectedPost.title);
       this.$emit("delete-post", id);
       //feche o modal e desselecione o p post
-      this;this.setupModal();
+      this.setupModal();
     },
   },
 };
@@ -67,15 +67,15 @@ export default {
     <div class="post" v-for="post in filteredPosts" :key="post.title">
     <div class="flex">
       <RouterLink :to="`/detail/${getPostId(post.title)}`">
-        <h3>
+        <h3 class="title">
         {{ post.title }}
       </h3>
       </RouterLink>
       <RouterLink :to="`/edit/${getPostId(post.title)}`">
-          <span class="material-symbols-rounded"> edit </span>
+          <span id="span1" class="material-symbols-rounded"> edit </span>
         </RouterLink>
-      <span
-        class="material-symbols-outlined"
+      <span 
+        id="span2" class="material-symbols-outlined"
         @click="setupModal(getPostId(post.title))"
       >
         delete
@@ -102,4 +102,15 @@ export default {
   </div>
 </template>
 
-<style></style>
+<style>
+.spans {
+  display: flex;
+  justify-content: space-evenly;
+  
+
+  width: 50%;
+
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+</style>

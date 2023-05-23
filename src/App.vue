@@ -8,7 +8,7 @@ export default {
       posts: [
         {
           datetime: "18/5/2023",
-          title: "titulo",
+          title: "titulo muito grande demais very very",
           content:
             "texto textotexto textotexto textotexto textotexto textotexto textotexto textotexto texto",
         },
@@ -59,9 +59,6 @@ export default {
     <RouterView :posts="posts" @create-post="addPost" @edit-post="updatePost" @delete-post="removePost"/>
   </main>
 
-  <footer>
-    <img id="gif" src="cat.gif" />
-  </footer>
 </template>
 
 <style scoped>

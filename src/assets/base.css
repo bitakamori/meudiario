@@ -10,6 +10,7 @@
 * {
   font-family: "Poppins", sans-serif;
   cursor: url(/public/svt.png), default;
+
 }
 
 :root {
@@ -19,6 +20,12 @@
   margin: 0 auto;
 
   --color-text: #b18597;
+
+  background: url(cat.gif);
+  background-repeat: no-repeat;
+  background-position: 150vh;
+  background-position-y: bottom;
+  background-attachment: fixed;
 }
 
 ::placeholder {
@@ -54,14 +61,3 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-footer {
-  min-width: 86%;
-  display: flex;
-  justify-content: end;
-  /* background: green; */
-
-  bottom: 0;
-  position: fixed;
-  /* background: red; */
-  /* cursor: url(/public/svt.png), default; */
-}

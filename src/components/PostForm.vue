@@ -72,7 +72,7 @@ export default {
       placeholder="Escreva seu post aqui ..."
     ></textarea>
 
-    <button class="learn-more" type="button" @click="handleCreatPost">
+    <button class="btn" type="button" @click="handleCreatPost">
       Criar Post
     </button>
   </form>

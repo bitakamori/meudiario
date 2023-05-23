@@ -21,22 +21,17 @@ export default {
 <template>
   <div id="detail">
     <!-- <div class="d" > -->
-      <h5>{{ post.datetime }}</h5>
       <h3>
         {{ post.title }}
       </h3>
-      <textarea readonly :value='post.content'>  </textarea>
+      <h5>{{ post.datetime }}</h5>
+      <textarea class="detail-txt" readonly :value='post.content' >  </textarea>
     <!-- </div> -->
  </div>
 </template>
 
 <style scoped>
-textarea {
-    resize: none;
-    outline: none;
-    border: none;
-    width: 80%;
-}
+
 
 </style>
 
