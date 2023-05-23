@@ -1,13 +1,13 @@
-button > * {
+.btn > * {
     box-sizing: border-box;
   }
   
-  button > ::before,
+  .btn > ::before,
   ::after {
     box-sizing: border-box;
   }
   
-  button {
+  .btn {
     font-size: 1rem;
     line-height: 1.5;
     display: flex;
@@ -29,7 +29,7 @@ button > * {
     font-family: inherit;
   }
   
-  .btn, .btn-cancelar, .btn-confirmar{
+  .btn {
     font-weight: 700;
     color: #382b22;
     text-transform: uppercase;
@@ -43,7 +43,7 @@ button > * {
       cursor: url(/public/svt.png), default;
   }
   
-  button::before {
+  .btn::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -60,45 +60,23 @@ button > * {
       background 150ms cubic-bezier(0, 0, 0.58, 1);
   }
   
-  button:hover {
+  .btn:hover {
     background: #ffe9e9;
     transform: translate(0, 0.25em);
   }
   
-  button:hover::before {
+  .btn:hover::before {
     box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
     transform: translate3d(0, 0.5em, -1em);
   }
   
-  button:active {
+  .btn:active {
     background: #ffe9e9;
     transform: translate(0em, 0.75em);
   }
   
-  button:active::before {
+  .btn:active::before {
     box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
     transform: translate3d(0, 0, -1em);
   }
 
-
- /* .btn-cancelar {
-    font-size: 1rem;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    max-width: 20vh;
-    max-height: 10vh;
-    background: #fff;
-  
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: inherit;
-    font-family: inherit;
-  } */
