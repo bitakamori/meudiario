@@ -29,7 +29,7 @@ button > * {
     font-family: inherit;
   }
   
-  .learn-more, .btn-cancelar, .btn-confirmar{
+  .btn, .btn-cancelar, .btn-confirmar{
     font-weight: 700;
     color: #382b22;
     text-transform: uppercase;

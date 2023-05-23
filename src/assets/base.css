@@ -61,14 +61,3 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-footer {
-  min-width: 10%;
-  display: flex;
-  justify-content: start;
-  background: green;
-
-  bottom: 0;
-  position: fixed;
-  /* background: red; */
-  /* cursor: url(/public/svt.png), default; */
-}

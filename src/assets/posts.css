@@ -1,13 +1,9 @@
 #lista-posts {
   margin: 4rem auto;
   max-width: 50%;
+  word-break: break-word;
 }
 
-.flex {
-  /* background: red; */
-  
-  
-}
 
 .title {
   display: block
