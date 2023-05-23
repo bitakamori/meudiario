@@ -25,7 +25,7 @@ export default {
         {{ post.title }}
       </h3>
       <h5>{{ post.datetime }}</h5>
-      <textarea  readonly :value='post.content' >  </textarea>
+      <textarea class="detail-txt" readonly :value='post.content' >  </textarea>
     <!-- </div> -->
  </div>
 </template>
