@@ -10,13 +10,13 @@ export default {
           datetime: "18/5/2023",
           title: "titulo muito grande demais very very",
           content:
-            "texto textotexto textotexto textotexto textotexto textotexto textotexto textotexto texto",
+            "Querido Diario",
         },
         {
-          datetime: "18/5/2023",
+          datetime: "19/5/2023",
           title: "titulo2",
           content:
-            "texto textotexto textotexto textotexto textotexto textotexto textotexto textotexto texto",
+            "Querido Diario",
         },
       ],
     };

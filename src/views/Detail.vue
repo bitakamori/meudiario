@@ -20,13 +20,13 @@ export default {
 
 <template>
   <div id="detail">
-    <!-- <div class="d" > -->
+   
       <h3>
         {{ post.title }}
       </h3>
       <h5>{{ post.datetime }}</h5>
       <textarea class="detail-txt" readonly :value='post.content' >  </textarea>
-    <!-- </div> -->
+   
  </div>
 </template>
 
