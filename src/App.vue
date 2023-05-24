@@ -8,15 +8,27 @@ export default {
       posts: [
         {
           datetime: "18/5/2023",
-          title: "titulo muito grande demais very very",
+          title: "A galinha",
           content:
-            "Querido Diario",
+            "Querido Diario, sabia que o recorde de voo de uma galinha é de 13 segundos? Maneiríssimo.",
         },
         {
           datetime: "19/5/2023",
-          title: "titulo2",
+          title: "A pulga",
           content:
-            "Querido Diario",
+            "Querido Diario, sabia tambem que uma pulga pode saltar até 350 vezes sua altura? Incrível.",
+        },
+        {
+          datetime: "20/5/2023",
+          title: "O urso-polar",
+          content:
+            "Querido Diario, acredita que os ursos-polares são, praticamente, invisíveis pelas câmeras de calor em virtude da eficiente camada de gordura isolante que os protege do frio? Fascinante.",
+        },
+        {
+          datetime: "21/5/2023",
+          title: "A baleira-azul",
+          content:
+            "Querido Diario, tem noção que a língua de uma baleia-azul pode pesar até 3,6 toneladas, o equivalente ao peso de um elefante médio? Inimaginável.",
         },
       ],
     };
