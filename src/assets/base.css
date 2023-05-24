@@ -9,23 +9,16 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  cursor: url(/public/svt2.png), default;
-
+  cursor: var(--cursor), default;
 }
 
 :root {
   font-family: "Poppins", sans-serif;
-  cursor: url(/public/svt2.png), default;
-  max-width: 90%;
-  margin: 0 auto;
+  cursor: url("/svt2.png"), default;
 
   --color-text: #b18597;
 
-  background: url("cat.gif");
-  background-repeat: no-repeat;
-  background-position: 90%;
-  background-position-y: bottom;
-  background-attachment: fixed;
+  --cursor: url("/svt2.png");
 }
 
 ::placeholder {
@@ -39,12 +32,22 @@ a {
   font-weight: 550;
 }
 
+html {
+  background: url("/cat.gif");
+  background-repeat: no-repeat;
+  background-position: 90%;
+  background-position-y: bottom;
+  background-attachment: fixed;
+}
+
 body {
   --sb-track-color: white;
   --sb-thumb-color: #b18597;
   --sb-size: 10px;
 
   scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+
+  margin: 0;
 }
 
 body::-webkit-scrollbar {
@@ -61,3 +64,11 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+/* #app {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+} */
