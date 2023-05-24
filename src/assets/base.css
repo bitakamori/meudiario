@@ -9,19 +9,19 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  cursor: url(/public/svt.png), default;
+  cursor: url(/public/svt2.png), default;
 
 }
 
 :root {
   font-family: "Poppins", sans-serif;
-  cursor: url(/public/svt.png), default;
+  cursor: url(/public/svt2.png), default;
   max-width: 90%;
   margin: 0 auto;
 
   --color-text: #b18597;
 
-  background: url(cat.gif);
+  background: url("cat.gif");
   background-repeat: no-repeat;
   background-position: 90%;
   background-position-y: bottom;
