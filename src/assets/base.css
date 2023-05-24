@@ -21,7 +21,7 @@
 
   --color-text: #b18597;
 
-  background: url(cat.gif);
+  background: url("cat.gif");
   background-repeat: no-repeat;
   background-position: 150vh;
   background-position-y: bottom;
