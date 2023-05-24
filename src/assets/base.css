@@ -23,7 +23,7 @@
 
   background: url(cat.gif);
   background-repeat: no-repeat;
-  background-position: 150vh;
+  background-position: 90%;
   background-position-y: bottom;
   background-attachment: fixed;
 }

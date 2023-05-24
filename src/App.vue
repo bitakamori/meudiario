@@ -14,21 +14,15 @@ export default {
         },
         {
           datetime: "19/5/2023",
-          title: "A pulga",
+          title: "A baleia-azul",
           content:
-            "Querido Diario, sabia tambem que uma pulga pode saltar até 350 vezes sua altura? Incrível.",
+            "Querido Diario, tem noção que a língua de uma baleia-azul pode pesar até 3,6 toneladas, o equivalente ao peso de um elefante médio? Inimaginável.",
         },
         {
           datetime: "20/5/2023",
           title: "O urso-polar",
           content:
             "Querido Diario, acredita que os ursos-polares são, praticamente, invisíveis pelas câmeras de calor em virtude da eficiente camada de gordura isolante que os protege do frio? Fascinante.",
-        },
-        {
-          datetime: "21/5/2023",
-          title: "A baleira-azul",
-          content:
-            "Querido Diario, tem noção que a língua de uma baleia-azul pode pesar até 3,6 toneladas, o equivalente ao peso de um elefante médio? Inimaginável.",
         },
       ],
     };
