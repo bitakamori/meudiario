@@ -22,7 +22,7 @@ export default {
           datetime: "20/5/2023",
           title: "O urso-polar",
           content:
-            "Querido Diario, acredita que os ursos-polares são, praticamente, invisíveis pelas câmeras de calor em virtude da eficiente camada de gordura isolante que os protege do frio? Fascinante.",
+            "Querido Diario, acredita que os ursos-polares são, praticamente, invisíveis pelas câmeras de calor em virtude da eficiente camada de gordura isolante que os protege do frio? Fascinante..",
         },
       ],
     };
