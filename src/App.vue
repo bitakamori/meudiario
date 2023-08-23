@@ -8,7 +8,7 @@ export default {
       posts: [
         {
           datetime: "18/5/2023",
-          title: "A galinha",
+          title: "A galinha linfdsaa",
           content:
             "Querido Diario, sabia que o recorde de voo de uma galinha é de 13 segundos? Maneiríssimo.",
         },
