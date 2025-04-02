@@ -1,29 +1,58 @@
-# vue-project
+# Meu Diário 📝
 
-This template should help get you started developing with Vue 3 in Vite.
+![Meu Diário](https://bitakamori.github.io/meudiario/assets/banner.png) <!-- Substitua pelo caminho correto do banner do projeto -->
 
-## Recommended IDE Setup
+Meu Diário foi um dos primeiros projetos que realizei quando estava aprendendo a programar. Ele representa uma das minhas primeiras experiências no desenvolvimento de aplicações web, combinando simplicidade e criatividade. 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 🌟 Funcionalidades
 
-## Customize configuration
+- 📖 Criar, editar e excluir entradas.
+- 🎨 Interface moderna e minimalista
+- 📅 Organização por data
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## 🚀 Tecnologias Utilizadas
 
-## Project Setup
+- Vue.js
+- TypeScript
+- Vuetify
 
-```sh
-npm install
-```
+📸 Screenshots
+![image](https://github.com/user-attachments/assets/d00db65a-6d52-4de9-9bb6-58ccedb0827a)
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
+## 📦 Como Executar o Projeto Localmente
 
-### Compile and Minify for Production
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/bitakamori/meudiario.git
+   ```
+2. Acesse a pasta do projeto:
+   ```bash
+   cd meudiario
+   ```
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+4. Inicie o servidor local:
+   ```bash
+   npm run serve
+   ```
+5. Acesse `http://localhost:8080/` no navegador.
 
-```sh
-npm run build
-```
+## 📌 Deploy
+
+O projeto está disponível online em:
+🔗 [Meu Diário](https://bitakamori.github.io/meudiario/)
+
+## 📜 Licença
+
+Este projeto está sob a licença MIT. Sinta-se à vontade para contribuir e personalizá-lo conforme necessário.
+
+## 💡 Contribuições
+
+Sinta-se livre para sugerir melhorias ou relatar problemas abrindo uma issue neste repositório.
+
+---
+📩 Criado por [Bianca Takamori](https://github.com/bitakamori)
+
