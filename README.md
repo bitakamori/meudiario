@@ -1,7 +1,5 @@
 # Meu Diário 📝
 
-![Meu Diário](https://bitakamori.github.io/meudiario/assets/banner.png) <!-- Substitua pelo caminho correto do banner do projeto -->
-
 Meu Diário foi um dos primeiros projetos que realizei quando estava aprendendo a programar. Ele representa uma das minhas primeiras experiências no desenvolvimento de aplicações web, combinando simplicidade e criatividade. 
 
 ## 🌟 Funcionalidades
